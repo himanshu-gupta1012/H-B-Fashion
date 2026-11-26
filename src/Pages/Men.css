@@ -1,0 +1,184 @@
+.men-page {
+    width: 100%;
+    color: #222;
+}
+
+/* Men hero */
+.men-hero {
+    width: 100%;
+    min-height: 550px;
+
+    background:
+        linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.50),
+            rgba(0, 0, 0, 0.15)
+        ),
+        url('/images/mens-banner.png.jpeg');
+
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    padding: 50px 8%;
+}
+
+.men-hero-content {
+    color: white;
+    max-width: 600px;
+}
+
+.men-hero-content > p:first-child {
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.men-hero-content h1 {
+    font-size: 55px;
+    line-height: 1.15;
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+.men-hero-content h1 span {
+    color: #c9a77c;
+}
+
+.men-hero-content h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.men-hero-content button {
+    margin-top: 22px;
+    padding: 13px 25px;
+    background: #c9a77c;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.men-hero-content button:hover {
+    background: #a88962;
+}
+
+/* Categories and filters */
+.men-categories {
+    text-align: center;
+    padding: 55px 20px 30px;
+}
+
+.men-subtitle {
+    color: #a88962;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.men-categories h2 {
+    font-size: 32px;
+    margin: 10px 0 25px;
+}
+
+.men-filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.men-filter-buttons button {
+    padding: 10px 22px;
+    background: white;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.men-filter-buttons button.active,
+.men-filter-buttons button:hover {
+    background: #222;
+    color: white;
+    border-color: #222;
+}
+
+/* Products */
+.men-products-section {
+    padding: 30px 5% 70px;
+}
+
+.men-products-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.men-products-heading h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.men-products-heading p {
+    color: #777;
+    font-size: 14px;
+}
+
+.men-products-heading select {
+    padding: 11px 15px;
+    border: 1px solid #ddd;
+    background: white;
+    outline: none;
+}
+
+.men-products-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 25px;
+}
+
+@media (max-width: 1000px) {
+    .men-products-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 700px) {
+    .men-hero {
+        min-height: 360px;
+        padding: 35px 6%;
+        background-size: auto 100%;
+        background-position: center top;
+    }
+
+    .men-hero-content h1 {
+        font-size: 40px;
+    }
+
+    .men-products-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 15px;
+    }
+
+    .men-products-section {
+        padding: 25px 4% 50px;
+    }
+}
+
+@media (max-width: 450px) {
+    .men-products-container {
+        grid-template-columns: 1fr;
+    }
+
+    .men-products-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}

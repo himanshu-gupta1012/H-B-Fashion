@@ -1,0 +1,283 @@
+.header {
+    width: 100%;
+    background: #ffffff;
+    padding: 20px 5%;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #222;
+}
+
+.logo span {
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+.navbar {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #b18a55;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.header-icons svg {
+    font-size: 21px;
+    cursor: pointer;
+    color: #222;
+    transition: 0.3s;
+}
+
+.header-icons svg:hover {
+    color: #b18a55;
+}
+
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background: #b18a55;
+    color: white;
+    font-size: 11px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-icons svg {
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.signup-btn {
+    width: 100px;
+    min-width: 100px;
+    padding: 9px 12px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background: #a88962;
+}
+
+.cart-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart-icon span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #a88962;
+    color: white;
+    border-radius: 50%;
+    font-size: 11px;
+    min-width: 17px;
+    height: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.profile-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.profile-dropdown {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 230px;
+    background: #fff;
+    color: #222;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 15px;
+    z-index: 1000;
+}
+
+.profile-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.profile-info p {
+    font-size: 13px;
+    color: #777;
+}
+
+.profile-dropdown hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 12px 0;
+}
+
+.profile-dropdown button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.profile-dropdown button:hover {
+    background: #f5f5f5;
+}
+
+
+/* Header responsive layout */
+.header-container {
+    gap: 24px;
+}
+
+.logo {
+    flex-shrink: 0;
+}
+
+.navbar {
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-icons {
+    flex-shrink: 0;
+}
+
+@media (max-width: 1100px) {
+    .header {
+        padding: 18px 3%;
+    }
+
+    .navbar {
+        gap: 16px;
+    }
+
+    .header-icons {
+        gap: 14px;
+    }
+}
+
+@media (max-width: 850px) {
+    .header-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 16px;
+    }
+
+    .navbar {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header-icons {
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .header {
+        padding: 14px 4%;
+    }
+
+    .header-container {
+        justify-content: space-between;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .logo span {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .navbar {
+        gap: 14px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        white-space: nowrap;
+        padding: 4px 0;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .header-icons {
+        gap: 12px;
+        margin-left: 0;
+    }
+
+    .header-icons svg {
+        font-size: 18px;
+    }
+
+    .signup-btn {
+        width: 78px;
+        min-width: 78px;
+        padding: 8px 6px;
+        font-size: 12px;
+    }
+}
