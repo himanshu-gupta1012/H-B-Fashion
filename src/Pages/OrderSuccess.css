@@ -1,0 +1,32 @@
+.success-page {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.success-icon {
+    font-size: 70px;
+    color: #16a34a;
+    margin-bottom: 20px;
+}
+
+.success-page h1 {
+    margin-bottom: 15px;
+}
+
+.success-page p {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.success-page button {
+    padding: 13px 25px;
+    background: #222;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
